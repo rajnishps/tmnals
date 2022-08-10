@@ -20,6 +20,7 @@
 }
 
 html {
+  scroll-behavior: smooth;
   font-size: 13px;
   font-weight: 500;
 }
@@ -95,7 +96,7 @@ img {
 
 @media (min-width: 900px) {
   .main-body {
-    margin: 3rem;
+    margin: 2rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto, auto;
@@ -114,5 +115,25 @@ img {
   }
   .card-5 {
     grid-area: 1/4/3/5;
+  }
+}
+
+@media (min-width: 1000px) {
+  .main-body {
+    margin: 5rem;
+    transition: 500ms;
+  }
+}
+@media (min-width: 1200px) {
+  .main-body {
+    margin: 8rem;
+    transition: 500ms;
+  }
+}
+
+@media (min-width: 1440px) {
+  .main-body {
+    margin: 10rem;
+    transition: 500ms;
   }
 }
